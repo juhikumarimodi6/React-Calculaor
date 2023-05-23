@@ -1,14 +1,12 @@
-var dotCount = 0;
-const InputExpression = (event, setInput) => {
+const InputExpression = (event, dotCountNum, setInput, setDotCountNum) => {
     let val = event.target.textContent[1];
         
     if(val === "+" || val === '-' || val === '/' || val === '*' || val === '=') {
-        dotCount = 0;
+        setDotCountNum(0)
     }
     if(val === '.') {
-        dotCount++;
-        console.log(dotCount)
-        let value = dotCount > 1 ? "" : ".";
+        setDotCountNum(prevCount =>  prevCount + 1)
+        let value = dotCountNum > 0 ? "" : ".";
         setInput(prevInput => prevInput + value);
     } else {
         setInput(prevInput => prevInput + val);

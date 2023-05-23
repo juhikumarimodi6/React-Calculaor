@@ -15,7 +15,6 @@ const ClearUnit = ({input,dotCountNum,setInput,setResult,setDotCountNum}) => {
             />
             <BackSpaceClear
                 input = {input}
-                dotCountNum = {dotCountNum}
                 setInput = {setInput}
                 setDotCountNum = {setDotCountNum }
             />

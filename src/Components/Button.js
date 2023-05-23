@@ -1,43 +1,25 @@
 import React from "react";
+import InputExpression from "./InputExpression";
 import Evaluate from "./Evaluate";
 import './Button.css';
-
-var dotCount = 0;
 
 const Button = (props) => {
     const {input, dotCountNum, setResult, setInput, setDotCountNum} = props;
     const value = props.children;
 
-    
     //to change the colour of box
     const isNotOperator = (val) => {
         return !isNaN(val[1]) || val[1] === '=' || val[1] === '.'
     }
 
+    //To check if its equal or not and accordingly which event to handle
+    const handleEvent = (val) => val[1] === '=' ? handleEvaluate: handleButtonClick
+    
     //forming a string of inputs
-    const handleButtonClick = (event) => {
-        let val = event.target.textContent[1];
-        
-        if(val === "+" || val === '-' || val === '/' || val === '*' || val === '=') {
-            dotCount = 0;
-        }
-        if(val === '.') {
-            dotCount++;
-            console.log(dotCount)
-            let value = dotCount > 1 ? "" : ".";
-            setInput(prevInput => prevInput + value);
-        } else {
-            setInput(prevInput => prevInput + val);
-        }
-    }
+    const handleButtonClick = (event) => InputExpression(event, dotCountNum, setInput, setDotCountNum)
 
     //if equal symbol button is pressed it evaluates
-    const handleEvaluate = () => Evaluate(input, dotCount, setResult)
-
-    //To check if its equal or not and accordingly which event to handle
-    const handleEvent = (val) => {
-        return  val[1] === '=' ? handleEvaluate: handleButtonClick
-    }
+    const handleEvaluate = () => Evaluate(input, setResult, setDotCountNum)
 
     return (
         <button 

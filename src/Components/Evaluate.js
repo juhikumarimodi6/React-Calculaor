@@ -1,10 +1,10 @@
-const Evaluate = (input, dotCount, setResult) => {
+const Evaluate = (input, setResult, setDotCountNum) => {
     try {
         setResult(eval(input).toString())
     } catch(err) {
         setResult("error")
     }
-     dotCount = 0;
+    setDotCountNum(0)
 }
 
 export default Evaluate;

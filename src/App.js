@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   const [input, setInput] = React.useState("")
   const [result, setResult] = React.useState("")
-  const [dotCountNum, setDotCountNum] = React.useState(4)
+  const [dotCountNum, setDotCountNum] = React.useState(0)
 
   return (
     <div className="app-container">
@@ -17,16 +17,16 @@ function App() {
       />
       <ClearUnit
         input = {input} 
+        dotCountNum = {dotCountNum}
         setInput = {setInput} 
         setResult={setResult} 
-        dotCountNum = {dotCountNum}
         setDotCountNum = {setDotCountNum}
       />
       <Rows 
         input = {input} 
+        dotCountNum = {dotCountNum}
         setInput = {setInput} 
         setResult={setResult} 
-        dotCountNum = {dotCountNum}
         setDotCountNum = {setDotCountNum}
       />
     </div>

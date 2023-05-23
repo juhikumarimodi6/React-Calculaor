@@ -6,12 +6,8 @@ const Display = ({input, result}) => {
     //display the pressed input onto the screen
     return (
       <div className="display">
-        <div>
-        {input}
-        </div>
-        <div>
-        {result}
-        </div>
+        <div> {input} </div>
+        <div> {result} </div>
       </div>
     )
 }
