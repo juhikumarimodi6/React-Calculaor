@@ -1,0 +1,11 @@
+.display {
+    background-color: black;
+    color:white;
+    height:5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+  }
