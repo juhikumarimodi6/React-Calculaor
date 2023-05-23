@@ -1,5 +1,5 @@
 import React from "react";
-import Clear from "./Components/Clear";
+import ClearUnit from "./Components/ClearUnit";
 import Display from "./Components/Display";
 import Rows from "./Components/Rows";
 import './App.css'
@@ -7,6 +7,7 @@ import './App.css'
 function App() {
   const [input, setInput] = React.useState("")
   const [result, setResult] = React.useState("")
+  const [dotCountNum, setDotCountNum] = React.useState(4)
 
   return (
     <div className="app-container">
@@ -14,14 +15,19 @@ function App() {
         input = {input} 
         result = {result}
       />
-      <Clear 
+      <ClearUnit
+        input = {input} 
         setInput = {setInput} 
         setResult={setResult} 
+        dotCountNum = {dotCountNum}
+        setDotCountNum = {setDotCountNum}
       />
       <Rows 
         input = {input} 
         setInput = {setInput} 
         setResult={setResult} 
+        dotCountNum = {dotCountNum}
+        setDotCountNum = {setDotCountNum}
       />
     </div>
   );

@@ -3,17 +3,19 @@ import Button from "./Button";
 import './Rows.css'
 
 const rows = [[7,8,9,'/'], [4,5,6,'*'], [1,2,3,'+'], ['.',0,'=','-']];
-const Rows = ({setInput, input, setResult}) => {
+const Rows = ({input, dotCountNum, setInput, setResult, setDotCountNum}) => {
     return(
         <div>
             {rows.map(row => {
                 return (
                     <div className="row">
-                        {row.map(num => <Button 
-                                            setInput = {setInput} 
+                        {row.map((num) => <Button 
                                             input = {input} 
+                                            dotCountNum = {dotCountNum}
+                                            setInput = {setInput} 
                                             setResult = {setResult}
-                                        > {num} </Button>)}
+                                            setDotCountNum = {setDotCountNum }
+                                            > {num} </Button>)}
                     </div>
                 )
             })}

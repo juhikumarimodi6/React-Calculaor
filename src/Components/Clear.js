@@ -1,27 +1,19 @@
 import React from "react";
 import './Clear.css'
 
-const Clear = ({setInput,setResult}) => {
+const Clear = ({dotCountNum,setInput,setResult,setDotCountNum}) => {
 
     //Clear the display screen
     const handleClear = (event) => {
         setInput("")
         setResult("")
+        setDotCountNum(0)
+        console.log("clear" + dotCountNum);
     }
-
-    const handleBackspace = () => {
-        setInput(prevInput => prevInput.slice(0, prevInput.length-1))
-    }
- 
     return (
-        <div className="clear">
             <button className="clear-content" onClick={handleClear}>
                 Clear
             </button >
-            <button  className="clear-content" onClick={handleBackspace}>
-                CE
-            </button >
-      </div>
     )
 }
 

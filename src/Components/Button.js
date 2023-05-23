@@ -5,8 +5,8 @@ import './Button.css';
 var dotCount = 0;
 
 const Button = (props) => {
-    const {input, setResult, setInput} = props;
-    var value = props.children;
+    const {input, dotCountNum, setResult, setInput, setDotCountNum} = props;
+    const value = props.children;
 
     
     //to change the colour of box
