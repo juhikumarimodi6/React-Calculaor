@@ -16,8 +16,6 @@ function App() {
         result = {result}
       />
       <ClearUnit
-        input = {input} 
-        dotCountNum = {dotCountNum}
         setInput = {setInput} 
         setResult={setResult} 
         setDotCountNum = {setDotCountNum}
