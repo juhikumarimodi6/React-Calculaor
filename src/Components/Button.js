@@ -19,7 +19,7 @@ const Button = (props) => {
     const handleButtonClick = (event) => InputExpression(event, dotCountNum, setInput, setDotCountNum)
 
     //if equal symbol button is pressed it evaluates
-    const handleEvaluate = () => Evaluate(input, setResult, setDotCountNum)
+    const handleEvaluate = () => Evaluate(input, setResult)
 
     return (
         <button 

@@ -3,21 +3,16 @@ import Clear from "./Clear";
 import BackSpaceClear from "./BackSpaceClear";
 import './Clear.css'
 
-const ClearUnit = ({input,dotCountNum,setInput,setResult,setDotCountNum}) => {
+const ClearUnit = ({setInput,setResult,setDotCountNum}) => {
 
     return (
         <div className="clear">
             <Clear 
-                dotCountNum = {dotCountNum}
                 setInput = {setInput}
                 setResult={setResult}
                 setDotCountNum = {setDotCountNum }
             />
-            <BackSpaceClear
-                input = {input}
-                setInput = {setInput}
-                setDotCountNum = {setDotCountNum }
-            />
+            <BackSpaceClear setInput = {setInput} />
       </div>
     )
 }

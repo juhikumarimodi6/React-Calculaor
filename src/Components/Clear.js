@@ -1,14 +1,13 @@
 import React from "react";
 import './Clear.css'
 
-const Clear = ({dotCountNum, setInput, setResult, setDotCountNum}) => {
+const Clear = ({setInput, setResult, setDotCountNum}) => {
 
     //Clear the display screen
-    const handleClear = (event) => {
+    const handleClear = () => {
         setInput("")
         setResult("")
         setDotCountNum(0)
-        console.log("clear" + dotCountNum);
     }
 
     return (
