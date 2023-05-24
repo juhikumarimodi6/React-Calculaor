@@ -14,3 +14,13 @@
     background-color: #fe9241;
     color: #ffffff;
   }
+
+  .button:active {
+    box-shadow: inset;
+    transform: scale(0.95);
+    background-color: #b1b5c4;
+  }
+
+  .operator:active {
+    background-color: #a1571f;
+  }
