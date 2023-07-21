@@ -10,7 +10,6 @@ The React Calculator App is a simple web application that allows users to perfor
 - Clear button to reset the calculator
 - Backspace functionality to delete the last input
 - Responsive design, suitable for various screen sizes
-- Keyboard support for improved accessibility and user experience
 
 ## Demo 
 
