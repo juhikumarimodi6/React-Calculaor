@@ -1,6 +1,6 @@
 # React Calculator App
 
-![React Calculator App](Calculator-screenshot.PNG)
+![React Calculator App](Calculator-screenshot1.PNG)
 
 The React Calculator App is a simple web application that allows users to perform basic arithmetic calculations in a user-friendly interface. This project was built using React, a popular JavaScript library for building user interfaces, making it fast, efficient, and interactive.
 
@@ -10,6 +10,7 @@ The React Calculator App is a simple web application that allows users to perfor
 - Clear button to reset the calculator
 - Backspace functionality to delete the last input
 - Responsive design, suitable for various screen sizes
+- Keyboard support for improved accessibility and user experience
 
 ## Demo 
 
@@ -82,6 +83,7 @@ Please ensure your code follows the project's coding standards and includes appr
 Feel free to reach out to me by email at juhikumarimodi6@gmail.com if you have any questions, suggestions, or feedback.
 
 ---
+
 
 
 
