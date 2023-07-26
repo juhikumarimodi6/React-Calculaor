@@ -2,6 +2,9 @@
 
 ![React Calculator App](Calculator-screenshot1.PNG)
 
+## Demo 
+
+You can check out the live demo of the React Calculator App:
 
 [weather-app-video.webm](https://github.com/juhikumarimodi6/React-Calculaor/assets/71226446/88d1f8cf-bb4a-4cf2-9979-f08ba1e8971f)
 
@@ -15,9 +18,6 @@ The React Calculator App is a simple web application that allows users to perfor
 - Responsive design, suitable for various screen sizes
 - Keyboard support for improved accessibility and user experience
 
-## Demo 
-
-You can check out the live demo of the React Calculator App [here](weather-app-video.webm).
 
 ## Installation
 
