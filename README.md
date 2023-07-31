@@ -20,7 +20,6 @@ You can check out the live demo of the React Calculator App:
 - Clear button to reset the calculator
 - Backspace functionality to delete the last input
 - Responsive design, suitable for various screen sizes
-- Keyboard support for improved accessibility and user experience
 
 
 ## Installation
